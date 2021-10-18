@@ -1,0 +1,17 @@
+--Mdir .
+--cc
+../src/top_1.0/core/ALU_control.sv
+../src/top_1.0/core/alu_mux.sv
+../src/top_1.0/core/ALU.sv
+../src/top_1.0/core/and_gate.sv
+../src/top_1.0/core/branches.sv
+../src/top_1.0/core/Control_Unit.sv
+../src/top_1.0/core/Immediate_Generation.sv
+../src/top_1.0/core/instr_mem.sv
+../src/top_1.0/core/memory.sv
+../src/top_1.0/core/mux2_1.sv
+../src/top_1.0/core/reg_file.sv
+../src/top_1.0/core/top.sv
+--top-module top
+--exe
+../src/top_1.0/tb/top.cpp

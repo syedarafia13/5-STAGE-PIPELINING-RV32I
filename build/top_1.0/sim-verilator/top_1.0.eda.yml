@@ -1,0 +1,61 @@
+dependencies:
+  ::top:1.0: []
+files:
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/ALU_control.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/alu_mux.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/ALU.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/and_gate.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/branches.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/Control_Unit.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/Immediate_Generation.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/instr_mem.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/memory.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/mux2_1.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/reg_file.sv
+- core: ::top:1.0
+  file_type: systemVerilogSource
+  name: ../src/top_1.0/core/top.sv
+- core: ::top:1.0
+  file_type: cppSource
+  name: ../src/top_1.0/tb/top.cpp
+hooks: {}
+name: top_1.0
+parameters:
+  vcd:
+    datatype: bool
+    default: true
+    paramtype: plusarg
+  vcd_start:
+    datatype: int
+    description: Delay start of VCD dumping until the specified time
+    paramtype: plusarg
+tool_options:
+  verilator:
+    verilator_options:
+    - --trace
+    - --Wall
+toplevel: top
+version: 0.2.1
+vpi: []

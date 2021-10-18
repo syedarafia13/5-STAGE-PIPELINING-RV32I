@@ -1,0 +1,15 @@
+--cc
+ALU_control.sv
+alu_mux.sv
+ALU.sv
+and_gate.sv
+Control_Unit.sv
+Immediate_Generation.sv
+instr_mem.sv
+memory.sv
+mux2_1.sv
+reg_file.sv
+top.sv
+--top-module top
+--exe
+../tb/top.cpp
