@@ -1,0 +1,165 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Oct 18 09:13:31 2021
+[*]
+[dumpfile] "/home/rafia/Desktop/top/build/top_1.0/sim-verilator/trace.vcd"
+[dumpfile_mtime] "Mon Oct 18 09:12:03 2021"
+[dumpfile_size] 21627444
+[savefile] "/home/rafia/Desktop/gtkwaves.gtkw"
+[timestart] 200
+[size] 1208 736
+[pos] -1 -1
+*-4.000000 229 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.top.
+[sst_width] 233
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 191
+@200
+-Top
+@28
+[color] 3
+TOP.clk
+TOP.reset
+@22
+TOP.output1[31:0]
+@200
+-Instruction Memory
+@28
+TOP.top.im1.EN
+@22
+TOP.top.im1.addr[11:0]
+@23
+[color] 2
+TOP.top.im1.rd[31:0]
+@200
+-Control Unit
+@28
+TOP.top.cu.alu_op[2:0]
+TOP.top.cu.branch
+TOP.top.cu.imm_sel[1:0]
+TOP.top.cu.load
+TOP.top.cu.next_sel[1:0]
+TOP.top.cu.op_a[1:0]
+TOP.top.cu.op_b
+@22
+TOP.top.cu.opcode[6:0]
+@28
+TOP.top.cu.reg_write
+TOP.top.cu.store
+@200
+-Register File
+@28
+TOP.top.rf1.write_enable
+@24
+TOP.top.rf1.readdata1[31:0]
+TOP.top.rf1.readdata2[31:0]
+TOP.top.rf1.reg_array[5][31:0]
+@22
+TOP.top.rf1.rd[4:0]
+TOP.top.rf1.rs1[4:0]
+TOP.top.rf1.rs2[4:0]
+@24
+TOP.top.rf1.write_data[31:0]
+@22
+TOP.top.rf1.out[31:0]
+@200
+-Immediate Generation
+@22
+TOP.top.ig_inst.I_Type[31:0]
+TOP.top.ig_inst.SB_Type[31:0]
+@24
+TOP.top.ig_inst.S_Type[31:0]
+@22
+TOP.top.ig_inst.UJ_Type[31:0]
+TOP.top.ig_inst.U_Type[31:0]
+TOP.top.ig_inst.ax[31:0]
+TOP.top.ig_inst.ay[31:0]
+TOP.top.ig_inst.imm[31:0]
+@28
+TOP.top.ig_inst.imm_sel[1:0]
+@22
+TOP.top.ig_inst.instr[24:0]
+TOP.top.ig_inst.pc[31:0]
+@200
+-ALU Control
+@28
+TOP.top.alu_cntrl1.ALUOp[2:0]
+@22
+TOP.top.alu_cntrl1.ALU_Cntrl_In[6:0]
+@28
+TOP.top.alu_cntrl1.func3[2:0]
+TOP.top.alu_cntrl1.func7
+@22
+TOP.top.alu_cntrl1.result[3:0]
+TOP.top.pc_4[31:0]
+TOP.top.pc_reg[31:0]
+@28
+TOP.top.pc_sel[1:0]
+@200
+-ALU
+@24
+TOP.top.alu1.a[31:0]
+TOP.top.alu1.b[31:0]
+TOP.top.alu1.alu_control[3:0]
+TOP.top.alu1.out[31:0]
+@200
+-ALUmux
+@22
+TOP.top.am.imm_mux[31:0]
+@24
+TOP.top.am.mux_out_1[31:0]
+TOP.top.am.mux_out_2[31:0]
+@28
+TOP.top.am.operand_A[1:0]
+TOP.top.am.operand_B
+@22
+TOP.top.am.pc4[31:0]
+TOP.top.am.pc_in[31:0]
+TOP.top.am.rdata1[31:0]
+TOP.top.am.rdata2[31:0]
+TOP.top.am.zeros[31:0]
+@200
+-Data Memory
+@28
+TOP.top.m1.write_en
+@24
+TOP.top.m1.mem_addr[7:0]
+[color] 7
+TOP.top.m1.mem_read_data[31:0]
+TOP.top.m1.mem_write_data[31:0]
+@22
+TOP.top.m1.width[31:0]
+TOP.top.m1.addr_width[31:0]
+@200
+-DMux
+@24
+TOP.top.mux2.alu_in[31:0]
+TOP.top.mux2.d_in[31:0]
+@28
+TOP.top.mux2.data_sel
+@24
+TOP.top.mux2.out[31:0]
+@200
+-Branches
+@22
+TOP.top.br1.a[31:0]
+TOP.top.br1.b[31:0]
+@28
+TOP.top.br1.func3[2:0]
+@200
+-BranchesAndGate
+@28
+TOP.top.br1.branch_out
+@22
+TOP.top.ag.B_add[31:0]
+@28
+TOP.top.ag.B_alu_true
+TOP.top.ag.Y_sel
+TOP.top.ag.op_branch
+@22
+TOP.top.ag.pc_branch[31:0]
+TOP.top.ag.sb_add[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
