@@ -16,7 +16,7 @@ module ALU_control(
    7'b0010001: result=4'b0000; //addi
    7'b0000001: result=4'b0001; //sub
    7'b0001110: result=4'b0100; //and
-   7'b0011110: result=4'b0010; //andi
+   7'b0011110: result=4'b0100; //andi
    7'b0011111: result=4'b0010; //andi
    7'b0001100: result=4'b0011; //or
    7'b0011100: result=4'b0011; //ori
