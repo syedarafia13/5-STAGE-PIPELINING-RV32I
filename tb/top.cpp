@@ -1,13 +1,13 @@
 // #include "verilated.h"
-#include "Vtop.h"
+#include "Vtop.h"            // From Verilating "top.v"
 #include "verilated_vcd_c.h" //VCD file
 
-using namespace std;
+using namespace std;     //"using" directive
 
-vluint64_t main_time=0;
+vluint64_t main_time=0;  // Current simulation time
 
 int main(int argc, char** argv, char** env){   // Initialize Verilators variables
-    Verilated::commandArgs(argc, argv);
+    Verilated::commandArgs(argc, argv);        // Remember args
     
     Vtop* my_top = new Vtop;                   // Create an instance of our module under test
 
@@ -35,7 +35,7 @@ vluint64_t vcd_start = 0;
 
     bool dump = false;
     my_top->clk = 0;
-    my_top->reset = 0;       // Set some inputs
+    my_top->reset = 0;         // Set some inputs
     while (!Verilated::gotFinish()) {
 
         if (vcd_file && !dump && (main_time > vcd_start)) {
@@ -43,7 +43,7 @@ vluint64_t vcd_start = 0;
           }
 
         if (main_time > 300) {
-            my_top->reset = 1;
+            my_top->reset = 1;  // Deassert reset
         }
         
         my_top->eval();     // Evaluate any changes triggered by the falling edge
@@ -55,8 +55,8 @@ vluint64_t vcd_start = 0;
         if (timeout && (main_time >= timeout)) {
 	        printf("Timeout: Exiting at time %lu\n", main_time);
 	    }
-        my_top->clk = !my_top->clk;
-        main_time += 2;
+        my_top->clk = !my_top->clk;    
+        main_time += 2;       // Time passes...
     }
 
     if (vcd_file)
